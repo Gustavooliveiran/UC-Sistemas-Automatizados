@@ -1,0 +1,21 @@
+﻿Ativo,Zona,Interface,Endereço,Máscara,Gateway,Função,Observações
+FW-OT,Supervisão,Ethernet,10.20.10.1,255.255.255.0,-,Roteador/ACL,Infraestrutura
+SW-SUP,Supervisão,Gestão,10.20.10.2,255.255.255.0,10.20.10.1,Switch sala,Infraestrutura
+SCADA,Supervisão,Ethernet,10.20.10.20,255.255.255.0,10.20.10.1,Supervisão,Servidor
+FW-OT-A,Célula A,Ethernet,10.20.30.1,255.255.255.0,-,Interface FW-OT,Infraestrutura
+SW-A,Célula A,Gestão,10.20.30.2,255.255.255.0,10.20.30.1,Switch industrial,Infraestrutura
+CLP-A,Célula A,PN / OPC UA,10.20.30.10,255.255.255.0,10.20.30.1,Controlador local,Controle
+HMI-A,Célula A,Ethernet,10.20.30.20,255.255.255.0,10.20.30.1,Operação local,Operação
+RIO-A1,Célula A,PROFINET,10.20.30.31,255.255.255.0,10.20.30.1,E/S remota,Nome PN: rio-a1
+RIO-A2,Célula A,PROFINET,10.20.30.32,255.255.255.0,10.20.30.1,E/S remota,Nome PN: rio-a2
+INV-A1,Célula A,PROFINET,10.20.30.41,255.255.255.0,10.20.30.1,Acionamento,Nome PN: inv-a1
+INV-A2,Célula A,PROFINET,10.20.30.42,255.255.255.0,10.20.30.1,Acionamento,Nome PN: inv-a2
+INV-A3,Célula A,PROFINET,10.20.30.43,255.255.255.0,10.20.30.1,Acionamento,Nome PN: inv-a3
+FW-OT-B,Célula B,Ethernet,10.20.40.1,255.255.255.0,-,Interface FW-OT,Infraestrutura
+SW-B,Célula B,Gestão,10.20.40.2,255.255.255.0,10.20.40.1,Switch industrial,Infraestrutura
+GW-B,Célula B,Modbus TCP,10.20.40.10,255.255.255.0,10.20.40.1,Gateway para RTU,TCP 502; acesso restrito
+CTRL-B,Célula B,RS-485 / RTU,slave 5,-,-,Controle legado,9600 bit/s; 8E1; hipótese
+EXP-A1,Célula A,Ethernet,10.20.30.60,255.255.255.0,10.20.30.1,Reserva expansão,Não instalado
+EXP-A2,Célula A,Ethernet,10.20.30.61,255.255.255.0,10.20.30.1,Reserva expansão,Não instalado
+EXP-A3,Célula A,Ethernet,10.20.30.62,255.255.255.0,10.20.30.1,Reserva expansão,Não instalado
+EXP-A4,Célula A,Ethernet,10.20.30.63,255.255.255.0,10.20.30.1,Reserva expansão,Não instalado

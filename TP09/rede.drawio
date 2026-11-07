@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram id="page0" name="TP09 - Rede industrial: três zonas e controle local">
+    <mxGraphModel dx="1600" dy="1100" grid="1" page="1" pageWidth="1600" pageHeight="1100">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="scada" value="SCADA&lt;br&gt;10.20.10.20/24" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sup" value="SW-SUP&lt;br&gt;10.20.10.2" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="420" y="100" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fw" value="FW-OT / ACL&lt;br&gt;.1 em cada rede /24" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="850" y="100" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="swa" value="SW-A / Célula A&lt;br&gt;10.20.30.2/24" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="390" y="310" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="swb" value="SW-B / Célula B&lt;br&gt;10.20.40.2/24" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="310" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="plc" value="CLP-A&lt;br&gt;10.20.30.10" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="40" y="560" width="140" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="hmi" value="HMI-A&lt;br&gt;10.20.30.20" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="195" y="560" width="140" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" value="RIO-A1&lt;br&gt;10.20.30.31" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="350" y="560" width="140" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" value="RIO-A2&lt;br&gt;10.20.30.32" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="505" y="560" width="140" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="i1" value="INV-A1&lt;br&gt;10.20.30.41" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="660" y="560" width="140" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="i2" value="INV-A2&lt;br&gt;10.20.30.42" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="815" y="560" width="140" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="i3" value="INV-A3&lt;br&gt;10.20.30.43" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="970" y="560" width="140" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="gw" value="GW-B&lt;br&gt;10.20.40.10&lt;br&gt;Modbus TCP / RTU" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="540" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ctrl" value="CTRL-B&lt;br&gt;RS-485 / RTU slave 5&lt;br&gt;Sem endereço IP" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="770" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="a" value="CÉLULA A: PROFINET IO local, cobre &amp;lt;100 m por canal.&lt;br&gt;CLP-A controla 2 RIO e 3 inversores; HMI opera localmente.&lt;br&gt;Reservas para expansão: 10.20.30.60 a 10.20.30.63.&lt;br&gt;As linhas representam portas individuais do switch." style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="70" y="720" width="1000" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="Supervisão 10.20.10.0/24 | Célula A 10.20.30.0/24 | Célula B 10.20.40.0/24&lt;br&gt;ACL: SCADA → CLP-A por OPC UA; SCADA → GW-B por Modbus TCP.&lt;br&gt;Hipóteses: CLP com OPC UA e gateway compatível. PN cíclico não atravessa o roteador.&lt;br&gt;Sem redundância automática: desempenho e recuperação dependem de ensaio físico." style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="70" y="920" width="1440" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="edge0" value="Cat6" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="scada" target="sup">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" value="Cat6" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="sup" target="fw">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" value="Fibra / 120 m" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="fw" target="swa">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="920" y="250" />
+              <mxPoint x="530" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" value="Fibra / 120 m" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="fw" target="swb">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1070" y="250" />
+              <mxPoint x="1370" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="swa" target="plc">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="470" />
+              <mxPoint x="110" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="swa" target="hmi">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="470" />
+              <mxPoint x="265" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge6" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="swa" target="r1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="470" />
+              <mxPoint x="420" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="swa" target="r2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="470" />
+              <mxPoint x="575" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge8" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="swa" target="i1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="470" />
+              <mxPoint x="730" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="swa" target="i2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="470" />
+              <mxPoint x="885" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge10" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="swa" target="i3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="470" />
+              <mxPoint x="1040" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge11" value="Cat6" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="swb" target="gw">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge12" value="RS-485" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="gw" target="ctrl">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram id="page0" name="TP01 - Porta automática: modelo funcional">
+    <mxGraphModel dx="1200" dy="760" grid="1" page="1" pageWidth="1200" pageHeight="760">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sensor" value="ENTRADAS&lt;br&gt;Presença e barreira&lt;br&gt;FC_ABERTA / FC_FECHADA" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="40" y="170" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="logic" value="CONTROLADOR&lt;br&gt;Validar sinais e permissivos&lt;br&gt;Sequenciar abrir / esperar / fechar&lt;br&gt;Priorizar emergência e falhas" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="390" y="165" width="330" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="act" value="ATUAÇÃO&lt;br&gt;ABRIR / FECHAR&lt;br&gt;Motor e acionamento" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="870" y="170" width="270" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="plant" value="PLANTA&lt;br&gt;Folha da porta e passagem&lt;br&gt;Posição e área ocupada" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="870" y="420" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fb" value="REALIMENTAÇÃO&lt;br&gt;Fim de curso e barreira&lt;br&gt;Confirmação de movimento" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="390" y="420" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="safe" value="FALHA / EMERGÊNCIA&lt;br&gt;Desligar movimento&lt;br&gt;Bloquear fechamento automático&lt;br&gt;Retomada por RESET seguro" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="285" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" value="FRONTEIRA: sensores, lógica, acionamento e porta. Usuários e energia são externos.&lt;br&gt;Perturbações: pessoa na passagem, vento e travamento. Hipótese: liberação manual na falta de energia." style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="60" y="630" width="1080" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge0" value="sinais" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="sensor" target="logic">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" value="comandos" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="logic" target="act">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" value="movimento" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="act" target="plant">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" value="posição" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="plant" target="fb">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="retorno" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="fb" target="logic">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" value="bloqueio" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontSize=13;" edge="1" parent="1" source="safe" target="logic">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="340" />
+              <mxPoint x="400" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

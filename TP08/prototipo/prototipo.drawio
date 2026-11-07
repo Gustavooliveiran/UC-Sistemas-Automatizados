@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram id="page0" name="TP08 - Processo - normal">
+    <mxGraphModel dx="1200" dy="760" grid="1" page="1" pageWidth="1200" pageHeight="760">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="R-101 / P-101&lt;br&gt;Protótipo de supervisão" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="value" value="58%&lt;br&gt;NORMAL" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="430" y="100" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="quality" value="Modo MANUAL&lt;br&gt;Perfil OPERADOR&lt;br&gt;Qualidade GOOD" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="830" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="detail" value="Bomba: PARADA; comando e retorno separados&lt;br&gt;H=75%; HH=90%; nível inválido não é zero.&lt;br&gt;Navegue para alarmes e manutenção. Alarme utiliza texto e cor." style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="50" y="280" width="1100" height="160" as="geometry" />
+        </mxCell>
+        <object id="nav0" label="PROCESSO" link="data:page/id,page0">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="70" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav1" label="ALARMES" link="data:page/id,page1">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="440" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav2" label="MANUTENÇÃO" link="data:page/id,page2">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="810" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="stop" label="PARAR P-101" link="data:page/id,page6">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="450" y="470" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page1" name="TP08 - Alarmes">
+    <mxGraphModel dx="1200" dy="760" grid="1" page="1" pageWidth="1200" pageHeight="760">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="R-101 / P-101&lt;br&gt;Protótipo de supervisão" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="value" value="92%&lt;br&gt;HH ATIVO" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="430" y="100" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="quality" value="Modo MANUAL&lt;br&gt;Perfil OPERADOR&lt;br&gt;Qualidade GOOD" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="830" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="detail" value="10:00:00 | R-101 | HH | ALTA | NÃO RECONHECIDO&lt;br&gt;Nível alto-alto; interromper enchimento e verificar retorno.&lt;br&gt;Reconhecer não elimina a condição nem comprova parada." style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="50" y="280" width="1100" height="180" as="geometry" />
+        </mxCell>
+        <object id="nav0" label="PROCESSO" link="data:page/id,page0">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="70" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav1" label="ALARMES" link="data:page/id,page1">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="440" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav2" label="MANUTENÇÃO" link="data:page/id,page2">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="810" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page2" name="TP08 - Manutenção">
+    <mxGraphModel dx="1200" dy="760" grid="1" page="1" pageWidth="1200" pageHeight="760">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="R-101 / P-101&lt;br&gt;Protótipo de supervisão" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="value" value="58%&lt;br&gt;GOOD" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="430" y="100" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="quality" value="Modo MANUAL&lt;br&gt;Perfil OPERADOR&lt;br&gt;Qualidade GOOD" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="830" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="detail" value="Diagnóstico P-101&lt;br&gt;EMG_OK=1; OL_OK=1; comunicação GOOD; qualidade GOOD&lt;br&gt;Partida disponível somente em MANUAL e HH=0&lt;br&gt;Último comando: PARAR; retorno: PARADA&lt;br&gt;Configuração reservada ao perfil MANUTENÇÃO." style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="50" y="260" width="1100" height="230" as="geometry" />
+        </mxCell>
+        <object id="nav0" label="PROCESSO" link="data:page/id,page0">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="70" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav1" label="ALARMES" link="data:page/id,page1">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="440" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav2" label="MANUTENÇÃO" link="data:page/id,page2">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="810" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page3" name="TP08 - Processo - atenção">
+    <mxGraphModel dx="1200" dy="760" grid="1" page="1" pageWidth="1200" pageHeight="760">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="R-101 / P-101&lt;br&gt;Protótipo de supervisão" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="value" value="78%&lt;br&gt;ATENÇÃO H" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="430" y="100" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="quality" value="Modo MANUAL&lt;br&gt;Perfil OPERADOR&lt;br&gt;Qualidade GOOD" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="830" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="detail" value="Bomba: PARADA; comando e retorno separados&lt;br&gt;H=75%; HH=90%; nível inválido não é zero.&lt;br&gt;Navegue para alarmes e manutenção. Alarme utiliza texto e cor." style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="50" y="280" width="1100" height="160" as="geometry" />
+        </mxCell>
+        <object id="nav0" label="PROCESSO" link="data:page/id,page0">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="70" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav1" label="ALARMES" link="data:page/id,page1">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="440" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav2" label="MANUTENÇÃO" link="data:page/id,page2">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="810" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page4" name="TP08 - Processo - HH">
+    <mxGraphModel dx="1200" dy="760" grid="1" page="1" pageWidth="1200" pageHeight="760">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="R-101 / P-101&lt;br&gt;Protótipo de supervisão" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="value" value="92%&lt;br&gt;ALARME HH" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="430" y="100" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="quality" value="Modo MANUAL&lt;br&gt;Perfil OPERADOR&lt;br&gt;Qualidade GOOD" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="830" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="detail" value="Bomba: PARADA; comando e retorno separados&lt;br&gt;H=75%; HH=90%; nível inválido não é zero.&lt;br&gt;Navegue para alarmes e manutenção. Alarme utiliza texto e cor." style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="50" y="280" width="1100" height="160" as="geometry" />
+        </mxCell>
+        <object id="nav0" label="PROCESSO" link="data:page/id,page0">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="70" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav1" label="ALARMES" link="data:page/id,page1">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="440" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav2" label="MANUTENÇÃO" link="data:page/id,page2">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="810" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page5" name="TP08 - Processo - comunicação ruim">
+    <mxGraphModel dx="1200" dy="760" grid="1" page="1" pageWidth="1200" pageHeight="760">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="R-101 / P-101&lt;br&gt;Protótipo de supervisão" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="value" value="---&lt;br&gt;FALHA DE COMUNICAÇÃO" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="430" y="100" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="quality" value="Modo MANUAL&lt;br&gt;Perfil OPERADOR&lt;br&gt;Qualidade BAD" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="830" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="detail" value="Bomba: DESCONHECIDO; comandos bloqueados&lt;br&gt;H=75%; HH=90%; nível inválido não é zero.&lt;br&gt;Navegue para alarmes e manutenção. Alarme utiliza texto e cor." style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="50" y="280" width="1100" height="160" as="geometry" />
+        </mxCell>
+        <object id="nav0" label="PROCESSO" link="data:page/id,page0">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="70" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav1" label="ALARMES" link="data:page/id,page1">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="440" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav2" label="MANUTENÇÃO" link="data:page/id,page2">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="810" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page6" name="TP08 - Confirmação de parada">
+    <mxGraphModel dx="1200" dy="760" grid="1" page="1" pageWidth="1200" pageHeight="760">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="R-101 / P-101&lt;br&gt;Protótipo de supervisão" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="value" value="58%&lt;br&gt;CONFIRMAR" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="430" y="100" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="quality" value="Modo MANUAL&lt;br&gt;Perfil OPERADOR&lt;br&gt;Qualidade GOOD" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="830" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="detail" value="Parar a bomba P-101 do reservatório R-101?&lt;br&gt;Estado atual: LIGADA. Consequência: interromper enchimento.&lt;br&gt;O retorno físico será verificado após o envio." style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="50" y="280" width="1100" height="160" as="geometry" />
+        </mxCell>
+        <object id="nav0" label="PROCESSO" link="data:page/id,page0">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="70" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav1" label="ALARMES" link="data:page/id,page1">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="440" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav2" label="MANUTENÇÃO" link="data:page/id,page2">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="810" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="confirm" label="CONFIRMAR PARADA" link="data:page/id,page7">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="150" y="470" width="350" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="cancel" label="CANCELAR" link="data:page/id,page0">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="700" y="470" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page7" name="TP08 - Comando enviado">
+    <mxGraphModel dx="1200" dy="760" grid="1" page="1" pageWidth="1200" pageHeight="760">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="R-101 / P-101&lt;br&gt;Protótipo de supervisão" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="value" value="58%&lt;br&gt;AGUARDANDO RETORNO" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="430" y="100" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="quality" value="Modo MANUAL&lt;br&gt;Perfil OPERADOR&lt;br&gt;Qualidade GOOD" style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="830" y="100" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="detail" value="Bomba: PARADA; comando e retorno separados&lt;br&gt;H=75%; HH=90%; nível inválido não é zero.&lt;br&gt;Comando PARAR aceito; aguardar STATUS=PARADA." style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+          <mxGeometry x="50" y="280" width="1100" height="160" as="geometry" />
+        </mxCell>
+        <object id="nav0" label="PROCESSO" link="data:page/id,page0">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="70" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav1" label="ALARMES" link="data:page/id,page1">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="440" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+        <object id="nav2" label="MANUTENÇÃO" link="data:page/id,page2">
+          <mxCell style="whiteSpace=wrap;html=1;fontSize=15;fontFamily=Arial;fillColor=#edf3f7;strokeColor=#29485c;" vertex="1" parent="1">
+            <mxGeometry x="810" y="590" width="300" height="70" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

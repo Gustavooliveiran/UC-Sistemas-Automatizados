@@ -1,0 +1,15 @@
+ID,Ação,Esperado,Obtido no modelo,Situação
+M01,ENABLE=1 por 6 s,"OFF[0,1) ON[1,2) OFF[2,3) ON[3,4) OFF[4,5) ON[5,6)","transições em 1.0s, 2.0s, 3.0s, 4.0s, 5.0s",Conferido no modelo
+M02,"ENABLE=0 em t=1,5 s (fase ON)",PISCA=0; timers zerados,PISCA=0; ET_ON=0,Conferido no modelo
+M03,ENABLE=1 de novo,recomeça OFF e liga após 1 s,"PISCA=0 até 0,99 s; PISCA=1 em 1,00 s",Conferido no modelo
+S01,"Estado inicial, sem peça",E0=1; MOTOR=1; VALVULA=0; PROD=0,E0=1; E1=0; E2=0; MOTOR=1; VALVULA=0; PROD=0,Conferido no modelo
+S02,S_POS=1 em E0,E1=1; MOTOR=0; VALVULA=1,E0=0; E1=1; E2=0; MOTOR=0; VALVULA=1; PROD=0,Conferido no modelo
+S03,"Enchendo por 1,9 s",ainda E1; PROD=0,E0=0; E1=1; E2=0; MOTOR=0; VALVULA=1; PROD=0,Conferido no modelo
+S04,T_ENCHE atinge 2 s,E2=1; MOTOR=1; VALVULA=0; PROD=1,E0=0; E1=0; E2=1; MOTOR=1; VALVULA=0; PROD=1,Conferido no modelo
+S05,Peça ainda em S_POS,permanece E2; PROD=1,E0=0; E1=0; E2=1; MOTOR=1; VALVULA=0; PROD=1,Conferido no modelo
+S06,S_POS=0 em E2,E0=1; PROD=1,E0=1; E1=0; E2=0; MOTOR=1; VALVULA=0; PROD=1,Conferido no modelo
+S07,EMG_OK=0 durante E1,MOTOR=0; VALVULA=0; estado E1 congelado,E0=0; E1=1; E2=0; MOTOR=0; VALVULA=0; PROD=1,Conferido no modelo
+S08,Emergência por 3 s (> PT),sequência bloqueada; PROD=1,E0=0; E1=1; E2=0; MOTOR=0; VALVULA=0; PROD=1,Conferido no modelo
+S09,EMG_OK=1 sem RESET,continua bloqueado: MOTOR=0; VALVULA=0,E0=0; E1=1; E2=0; MOTOR=0; VALVULA=0; PROD=1,Conferido no modelo
+S10,RESET com peça em S_POS,recusado: sem ações,E0=0; E1=1; E2=0; MOTOR=0; VALVULA=0; PROD=1,Conferido no modelo
+S11,RESET seguro sem peça,E0=1; MOTOR=1; PROD=1 preservado,E0=1; E1=0; E2=0; MOTOR=1; VALVULA=0; PROD=1,Conferido no modelo

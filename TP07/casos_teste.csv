@@ -1,0 +1,9 @@
+﻿ID,Ação,Esperado,Obtido simulador,Situação
+T01,START por 2 s,ET=2; Q=0; M=0,ET=2112 ms; MOTOR_DELAY=0,Confirmado no PLC Simulator Online
+T02,START por 3 s,ET=3; Q=1; M=1,ET=3000 ms; MOTOR_DELAY=1,Confirmado no PLC Simulator Online
+T03,STOP_OK=0 durante ET,ET=0; Q=0; M=0,ET=0 ms; MOTOR_DELAY=0,Confirmado no PLC Simulator Online
+T04,EMG_OK=0 com saída ligada,M=0,ET=0 ms; MOTOR_DELAY=0,Confirmado no PLC Simulator Online
+T05,Restaurar sem START,M=0,ET=0 ms; MOTOR_DELAY=0,Confirmado no PLC Simulator Online
+T06,S_PECA mantido alto,CV não cresce após primeira borda,CV=1; LOTE_OK=0,Confirmado no PLC Simulator Online
+T07,Cinco bordas,CV=5; LOTE_OK=1,CV=5; LOTE_OK=1,Confirmado no PLC Simulator Online
+T08,RESET e borda simultâneos,CV=0; LOTE_OK=0,CV=0; LOTE_OK=0,Confirmado no PLC Simulator Online

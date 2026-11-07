@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 130,
+      "left": 40,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led",
+      "top": -60,
+      "left": 70,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r",
+      "top": 10,
+      "left": 75,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn",
+      "top": -35,
+      "left": 200,
+      "attrs": {
+        "color": "green",
+        "bounce": "0"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot",
+      "top": -50,
+      "left": 330,
+      "attrs": {
+        "value": "200"
+      }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht",
+      "top": -65,
+      "left": 460,
+      "attrs": {
+        "temperature": "25",
+        "humidity": "40"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "uno:8",
+      "r:1",
+      "green",
+      []
+    ],
+    [
+      "r:2",
+      "led:A",
+      "green",
+      []
+    ],
+    [
+      "led:C",
+      "uno:GND.1",
+      "black",
+      []
+    ],
+    [
+      "uno:2",
+      "btn:1.l",
+      "green",
+      []
+    ],
+    [
+      "btn:2.l",
+      "uno:GND.2",
+      "black",
+      []
+    ],
+    [
+      "pot:VCC",
+      "uno:5V",
+      "red",
+      []
+    ],
+    [
+      "pot:GND",
+      "uno:GND.2",
+      "black",
+      []
+    ],
+    [
+      "pot:SIG",
+      "uno:A0",
+      "green",
+      []
+    ],
+    [
+      "dht:VCC",
+      "uno:5V",
+      "red",
+      []
+    ],
+    [
+      "dht:GND",
+      "uno:GND.2",
+      "black",
+      []
+    ],
+    [
+      "dht:SDA",
+      "uno:4",
+      "green",
+      []
+    ]
+  ]
+}

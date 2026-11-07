@@ -1,0 +1,7 @@
+﻿ID,Entrada,Esperado,Obtido,Situação,Método
+T01,FECHADA; presença válida,ABRINDO,ABRINDO,Conforme,Percurso documental
+T02,ABERTA; área livre por 3 s,FECHANDO,FECHANDO,Conforme,Percurso documental
+T03,FECHANDO; barreira=1,Parar e reabrir,FECHAR=0; ABRIR=1 no próximo estado,Conforme,Percurso documental
+T04,Qualidade inválida,Não fechar automaticamente,FALHA; movimentos=0,Conforme,Percurso documental
+T05,Emergência em movimento,Movimentos=0; reset exigido,SEGURO,Conforme,Percurso documental
+T06,Ambos fins de curso ativos,FALHA,FALHA,Conforme,Percurso documental

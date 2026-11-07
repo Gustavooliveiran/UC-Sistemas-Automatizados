@@ -1,0 +1,19 @@
+TP07 - Especificação Ladder
+R01: --[EMG_OK]--[STOP_OK]--[START]--[TON T1 PT=3s]
+R02: --[EMG_OK]--[STOP_OK]--[T1.Q]----(MOTOR_DELAY)
+
+Intermitência: fase inicia OFF; TON_OFF IN=ENABLE AND NOT PISCA, PT=1s;
+TON_ON IN=ENABLE AND PISCA, PT=1s.
+Capturar DONE_OFF e DONE_ON antes de atualizar PISCA. Se DONE_OFF, SET PISCA.
+Se DONE_ON, RESET PISCA. Sem ENABLE, RESET PISCA e timers. Uma transição por varredura.
+
+Lote: CTU C1, CU=S_PECA, R=RESET_LOTE, PV=5. LOTE_OK=C1.Q (CV>=5).
+Reset tem prioridade sobre incremento. Guardar estado anterior de S_PECA mesmo no reset.
+Sensor mantido em 1 depois de reset não gera nova borda; liberar e reaplicar.
+
+Sequência livre: memórias E0 transportar, E1 encher, E2 liberar; inicial E0.
+T01=E0 AND S_POS; T12=E1 AND T_ENCHE.Q; T20=E2 AND NOT S_POS.
+Calcular transições com memórias antigas. Depois atualizar as três memórias em conjunto.
+TON T_ENCHE IN=E1, PT=2s; CTU_PROD conta somente T12.
+MOTOR=(E0 OR E2) AND EMG_OK; VALVULA=E1 AND EMG_OK.
+EMG_OK=0: remover ações e bloquear sequência. RESET seguro sem peça reinicializa E0.

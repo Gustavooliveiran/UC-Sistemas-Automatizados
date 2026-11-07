@@ -1,0 +1,4 @@
+﻿Variável,Sensor,Entrada,Resposta
+PRESENCA,Botão,D2 DI ativo LOW,LED D8
+NIVEL_BRUTO,Potenciômetro,A0 AI 0–1023,Classificação
+TEMP_C,DHT22,D4 digital codificado,Classificação e diagnóstico

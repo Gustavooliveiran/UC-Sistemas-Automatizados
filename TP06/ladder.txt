@@ -1,0 +1,12 @@
+TP06 - Partida com selo (especificação Ladder)
+R01: --[EMG_OK]--[STOP_OK]--[OL_OK]--+--[START]--+--(MOTOR)
+                                   +--[MOTOR]--+
+R02: --[MOTOR]------------------------------------(RUN)
+R03: --[EMG_OK]--[STOP_OK]--[OL_OK]----------------(READY)
+
+Extensão independente: reversão com bloqueio de comando conflitante.
+R04: --[EMG_OK]--[STOP_OK]--[OL_OK]--[/REV]--[/CMD_REV]--+--[CMD_FWD]--+--(FWD)
+                                                     +--[FWD]------+ 
+R05: --[EMG_OK]--[STOP_OK]--[OL_OK]--[/FWD]--[/CMD_FWD]--+--[CMD_REV]--+--(REV)
+                                                     +--[REV]------+
+CMD_FWD=CMD_REV=1 remove as duas saídas. Exigir parada antes de trocar sentido.

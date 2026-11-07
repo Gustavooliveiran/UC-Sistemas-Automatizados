@@ -1,0 +1,16 @@
+﻿ID,ADC,Temperatura_C,Botão,Estado esperado,LED esperado,Obtido Wokwi,Situação
+T01,200,25,0,NORMAL,0,NORMAL,Estado confirmado no Serial
+T02,500,25,0,ATENCAO,0,ATENCAO,Estado confirmado no Serial
+T03,800,25,0,ALARME,0,ALARME,Estado confirmado no Serial
+T04,200,35,0,ATENCAO,0,ATENCAO,Estado confirmado no Serial
+T05,200,45,0,ALARME,0,ALARME,Estado confirmado no Serial
+T06,200,25,1,NORMAL,1,NORMAL,Estado confirmado no Serial e LED aceso na captura
+T07,900,NaN,0,FALHA DE SENSOR,0,FALHA DE SENSOR,Estado confirmado no Serial
+T08,399,25,0,NORMAL,0,NORMAL,Estado confirmado no Serial
+T09,400,25,0,ATENCAO,0,ATENCAO,Estado confirmado no Serial
+T10,749,25,0,ATENCAO,0,ATENCAO,Estado confirmado no Serial
+T11,750,25,0,ALARME,0,ALARME,Estado confirmado no Serial
+T12,900,45,0,ALARME,0,ALARME,Estado confirmado no Serial
+T13,500,45,0,ALARME,0,ALARME,Estado confirmado no Serial
+T14,900,35,0,ALARME,0,ALARME,Estado confirmado no Serial
+T15,500,35,0,ATENCAO,0,ATENCAO,Estado confirmado no Serial

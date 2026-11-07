@@ -1,0 +1,9 @@
+﻿ID,Pré-condição,Ação,Esperado,Obtido simulador,Situação
+T01,M=0; permissivos=1,START=1,M=1,M=1,Confirmado no PLC Simulator Online
+T02,M=1,START=0,M=1,M=1,Confirmado no PLC Simulator Online
+T03,M=1,STOP_OK=0,M=0,M=0,Confirmado no PLC Simulator Online
+T04,M=1,EMG_OK=0,M=0,M=0,Confirmado no PLC Simulator Online
+T05,M=0; EMG_OK=0,START=1,M=0,M=0,Confirmado no PLC Simulator Online
+T06,M=1,OL_OK=0,M=0,M=0,Confirmado no PLC Simulator Online
+T07,M=0; START=0,Restaurar permissivos,M=0,M=0,Confirmado no PLC Simulator Online
+T08,FWD=REV=0,CMD_FWD=CMD_REV=1,FWD=REV=0,FWD=0; REV=0,Confirmado no PLC Simulator Online

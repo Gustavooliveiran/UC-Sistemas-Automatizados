@@ -1,0 +1,12 @@
+﻿Tag,Tipo,Unidade,Acesso,Descrição
+LT_101.PV,REAL,%,R,Nível 0–100%; indisponível quando qualidade ruim
+LT_101.QUALITY,ENUM,-,R,GOOD / BAD
+P_101.CMD,BOOL,-,RW,Solicitação ao controlador; não é retorno físico
+P_101.STATUS,ENUM,-,R,PARADA / LIGADA / FALHA / DESCONHECIDO
+P_101.MODE,ENUM,-,R,MANUAL / AUTOMATICO / LOCAL
+COMM_PLC,ENUM,-,R,GOOD / BAD
+USER_ROLE,ENUM,-,R,OPERADOR / MANUTENCAO
+H,BOOL,-,R,Atenção: nível >=75%
+HH,BOOL,-,R,Alarme: nível >=90%
+EMG_OK,BOOL,-,R,Permissivo de emergência
+OL_OK,BOOL,-,R,Permissivo de sobrecarga

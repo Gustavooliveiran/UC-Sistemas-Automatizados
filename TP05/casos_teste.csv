@@ -1,0 +1,11 @@
+﻿Caso,Etapa anterior,Condição,Esperado,Obtido,Método
+1,E0,"7,9 s",E0 vermelho,E0 vermelho,Percurso documental
+2,E0,"8,0 s",E1 verde,E1 verde,Percurso documental
+3,E0,"8,1 s",E1 verde,E1 verde,Percurso documental
+4,E1,"9,9 s",E1 verde,E1 verde,Percurso documental
+5,E1,10 s,E2 amarelo,E2 amarelo,Percurso documental
+6,E2,"2,9 s",E2 amarelo,E2 amarelo,Percurso documental
+7,E2,3 s,E0 vermelho,E0 vermelho,Percurso documental
+8,E1,EMG=1,E0 vermelho; bloqueado,E0 vermelho; bloqueado,Percurso documental
+9,E0 bloqueado,EMG=0 sem RESET,E0 bloqueado,E0 bloqueado,Percurso documental
+10,E0 bloqueado,RESET seguro,E0 tempo=0,E0 tempo=0,Percurso documental

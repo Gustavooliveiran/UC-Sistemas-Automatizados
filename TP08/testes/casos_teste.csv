@@ -1,0 +1,6 @@
+﻿ID,Cenário,Esperado,Obtido,Situação
+T01,58%; GOOD; MANUAL,NORMAL; comandos disponíveis,Pendente teste de navegação,Pendente
+T02,78%,ATENÇÃO H,Pendente teste de navegação,Pendente
+T03,92%,HH destacado e listado,Pendente teste de navegação,Pendente
+T04,COMM_PLC=BAD,Valor ---; comandos bloqueados,Pendente teste de navegação,Pendente
+T05,Parar P-101,Confirmação específica,Pendente teste de navegação,Pendente

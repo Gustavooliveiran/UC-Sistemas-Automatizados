@@ -1,0 +1,1881 @@
+{
+  "name": "TP04 - Logica combinacional",
+  "timePeriod": 500,
+  "clockEnabled": false,
+  "projectId": "a61d792bcb1c496fb063b191540ba9ef",
+  "focussedCircuit": 3104100,
+  "orderedTabs": [
+    "3104100",
+    "3104101",
+    "3104102",
+    "3104103",
+    "3104104"
+  ],
+  "scopes": [
+    {
+      "layout": {
+        "width": 100,
+        "height": 280,
+        "title_x": 50,
+        "title_y": 13,
+        "titleEnabled": true
+      },
+      "verilogMetadata": {
+        "isVerilogCircuit": false,
+        "isMainCircuit": false,
+        "code": "// Write Some Verilog Code Here!",
+        "subCircuitScopeIds": []
+      },
+      "restrictedCircuitElementsUsed": [],
+      "id": 3104100,
+      "name": "Partida_condicionada",
+      "allNodes": [
+        {
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            3
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            4
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            6
+          ]
+        },
+        {
+          "x": -10,
+          "y": -10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            0
+          ]
+        },
+        {
+          "x": -10,
+          "y": 10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            1
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            8
+          ]
+        },
+        {
+          "x": -10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            2
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            9
+          ]
+        },
+        {
+          "x": -10,
+          "y": -10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            5
+          ]
+        },
+        {
+          "x": -10,
+          "y": 10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            7
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            11
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            10
+          ]
+        }
+      ],
+      "nodes": [],
+      "Input": [
+        {
+          "x": 100,
+          "y": 100,
+          "objectType": "Input",
+          "label": "S",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1,
+              {
+                "x": 0,
+                "y": 20,
+                "id": "99968c40bd7f4d2d9728948894f6712a"
+              }
+            ],
+            "nodes": {
+              "output1": 0
+            },
+            "values": {
+              "state": 0
+            }
+          }
+        },
+        {
+          "x": 100,
+          "y": 160,
+          "objectType": "Input",
+          "label": "G",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1,
+              {
+                "x": 0,
+                "y": 40,
+                "id": "9c2841c800f049eb9a4a6dd787068005"
+              }
+            ],
+            "nodes": {
+              "output1": 1
+            },
+            "values": {
+              "state": 0
+            }
+          }
+        },
+        {
+          "x": 100,
+          "y": 220,
+          "objectType": "Input",
+          "label": "E",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1,
+              {
+                "x": 0,
+                "y": 60,
+                "id": "8052c81a05ef4d568b9a85d49ce3fa2f"
+              }
+            ],
+            "nodes": {
+              "output1": 2
+            },
+            "values": {
+              "state": 0
+            }
+          }
+        }
+      ],
+      "AndGate": [
+        {
+          "x": 250,
+          "y": 130,
+          "objectType": "AndGate",
+          "label": "SG",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              2,
+              1
+            ],
+            "nodes": {
+              "output1": 5,
+              "inp": [
+                3,
+                4
+              ]
+            }
+          }
+        },
+        {
+          "x": 450,
+          "y": 170,
+          "objectType": "AndGate",
+          "label": "M",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              2,
+              1
+            ],
+            "nodes": {
+              "output1": 10,
+              "inp": [
+                8,
+                9
+              ]
+            }
+          }
+        }
+      ],
+      "NotGate": [
+        {
+          "x": 250,
+          "y": 220,
+          "objectType": "NotGate",
+          "label": "NE",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1
+            ],
+            "nodes": {
+              "output1": 7,
+              "inp1": 6
+            }
+          }
+        }
+      ],
+      "Output": [
+        {
+          "x": 640,
+          "y": 110,
+          "objectType": "Output",
+          "label": "M",
+          "direction": "LEFT",
+          "labelDirection": "RIGHT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "LEFT",
+              1,
+              {
+                "x": 100,
+                "y": 20,
+                "id": "5ce8950186be4134938e502cce683cc1"
+              }
+            ],
+            "nodes": {
+              "inp1": 11
+            }
+          }
+        }
+      ]
+    },
+    {
+      "layout": {
+        "width": 100,
+        "height": 280,
+        "title_x": 50,
+        "title_y": 13,
+        "titleEnabled": true
+      },
+      "verilogMetadata": {
+        "isVerilogCircuit": false,
+        "isMainCircuit": false,
+        "code": "// Write Some Verilog Code Here!",
+        "subCircuitScopeIds": []
+      },
+      "restrictedCircuitElementsUsed": [],
+      "id": 3104101,
+      "name": "Portas_basicas",
+      "allNodes": [
+        {
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            2,
+            5,
+            8,
+            10
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            3,
+            6,
+            11
+          ]
+        },
+        {
+          "x": -10,
+          "y": -10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            0
+          ]
+        },
+        {
+          "x": -10,
+          "y": 10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            1
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            13
+          ]
+        },
+        {
+          "x": -10,
+          "y": -10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            0
+          ]
+        },
+        {
+          "x": -10,
+          "y": 10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            1
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            14
+          ]
+        },
+        {
+          "x": -10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            0
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            15
+          ]
+        },
+        {
+          "x": -10,
+          "y": -10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            0
+          ]
+        },
+        {
+          "x": -10,
+          "y": 10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            1
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            16
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            4
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            7
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            9
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            12
+          ]
+        }
+      ],
+      "nodes": [],
+      "Input": [
+        {
+          "x": 100,
+          "y": 100,
+          "objectType": "Input",
+          "label": "A",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1,
+              {
+                "x": 0,
+                "y": 20,
+                "id": "ace27772b78e49b9ab552157c91b4a7c"
+              }
+            ],
+            "nodes": {
+              "output1": 0
+            },
+            "values": {
+              "state": 0
+            }
+          }
+        },
+        {
+          "x": 100,
+          "y": 160,
+          "objectType": "Input",
+          "label": "B",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1,
+              {
+                "x": 0,
+                "y": 40,
+                "id": "18653627518a447cbfa1a1d918a4cff8"
+              }
+            ],
+            "nodes": {
+              "output1": 1
+            },
+            "values": {
+              "state": 0
+            }
+          }
+        }
+      ],
+      "AndGate": [
+        {
+          "x": 320,
+          "y": 100,
+          "objectType": "AndGate",
+          "label": "AND",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              2,
+              1
+            ],
+            "nodes": {
+              "output1": 4,
+              "inp": [
+                2,
+                3
+              ]
+            }
+          }
+        }
+      ],
+      "OrGate": [
+        {
+          "x": 320,
+          "y": 170,
+          "objectType": "OrGate",
+          "label": "OR",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              2,
+              1
+            ],
+            "nodes": {
+              "output1": 7,
+              "inp": [
+                5,
+                6
+              ]
+            }
+          }
+        }
+      ],
+      "NotGate": [
+        {
+          "x": 320,
+          "y": 240,
+          "objectType": "NotGate",
+          "label": "NOT",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1
+            ],
+            "nodes": {
+              "output1": 9,
+              "inp1": 8
+            }
+          }
+        }
+      ],
+      "XorGate": [
+        {
+          "x": 320,
+          "y": 320,
+          "objectType": "XorGate",
+          "label": "XOR",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              2,
+              1
+            ],
+            "nodes": {
+              "output1": 12,
+              "inp": [
+                10,
+                11
+              ]
+            }
+          }
+        }
+      ],
+      "Output": [
+        {
+          "x": 640,
+          "y": 110,
+          "objectType": "Output",
+          "label": "AND",
+          "direction": "LEFT",
+          "labelDirection": "RIGHT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "LEFT",
+              1,
+              {
+                "x": 100,
+                "y": 20,
+                "id": "41814f6246594e7eb40d0f6365aff3a1"
+              }
+            ],
+            "nodes": {
+              "inp1": 13
+            }
+          }
+        },
+        {
+          "x": 640,
+          "y": 190,
+          "objectType": "Output",
+          "label": "OR",
+          "direction": "LEFT",
+          "labelDirection": "RIGHT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "LEFT",
+              1,
+              {
+                "x": 100,
+                "y": 40,
+                "id": "ee39672c1f054abdba0130e8e25f7fd9"
+              }
+            ],
+            "nodes": {
+              "inp1": 14
+            }
+          }
+        },
+        {
+          "x": 640,
+          "y": 270,
+          "objectType": "Output",
+          "label": "NOT",
+          "direction": "LEFT",
+          "labelDirection": "RIGHT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "LEFT",
+              1,
+              {
+                "x": 100,
+                "y": 60,
+                "id": "1efeff2024554a489bfd4cea4ff84f78"
+              }
+            ],
+            "nodes": {
+              "inp1": 15
+            }
+          }
+        },
+        {
+          "x": 640,
+          "y": 350,
+          "objectType": "Output",
+          "label": "XOR",
+          "direction": "LEFT",
+          "labelDirection": "RIGHT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "LEFT",
+              1,
+              {
+                "x": 100,
+                "y": 80,
+                "id": "16a64186d35849ed8b6b5ee4e412d3d7"
+              }
+            ],
+            "nodes": {
+              "inp1": 16
+            }
+          }
+        }
+      ]
+    },
+    {
+      "layout": {
+        "width": 100,
+        "height": 280,
+        "title_x": 50,
+        "title_y": 13,
+        "titleEnabled": true
+      },
+      "verilogMetadata": {
+        "isVerilogCircuit": false,
+        "isMainCircuit": false,
+        "code": "// Write Some Verilog Code Here!",
+        "subCircuitScopeIds": []
+      },
+      "restrictedCircuitElementsUsed": [],
+      "id": 3104102,
+      "name": "Alarme",
+      "allNodes": [
+        {
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            2
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            5
+          ]
+        },
+        {
+          "x": -10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            0
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            4
+          ]
+        },
+        {
+          "x": -10,
+          "y": -10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            3
+          ]
+        },
+        {
+          "x": -10,
+          "y": 10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            1
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            7
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            6
+          ]
+        }
+      ],
+      "nodes": [],
+      "Input": [
+        {
+          "x": 100,
+          "y": 100,
+          "objectType": "Input",
+          "label": "G",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1,
+              {
+                "x": 0,
+                "y": 20,
+                "id": "80ba550556ff4f9ba73e1e84ee32a5a4"
+              }
+            ],
+            "nodes": {
+              "output1": 0
+            },
+            "values": {
+              "state": 0
+            }
+          }
+        },
+        {
+          "x": 100,
+          "y": 160,
+          "objectType": "Input",
+          "label": "E",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1,
+              {
+                "x": 0,
+                "y": 40,
+                "id": "90676b28d985462f9c5fd9530accde68"
+              }
+            ],
+            "nodes": {
+              "output1": 1
+            },
+            "values": {
+              "state": 0
+            }
+          }
+        }
+      ],
+      "NotGate": [
+        {
+          "x": 250,
+          "y": 100,
+          "objectType": "NotGate",
+          "label": "NG",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1
+            ],
+            "nodes": {
+              "output1": 3,
+              "inp1": 2
+            }
+          }
+        }
+      ],
+      "OrGate": [
+        {
+          "x": 450,
+          "y": 130,
+          "objectType": "OrGate",
+          "label": "A",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              2,
+              1
+            ],
+            "nodes": {
+              "output1": 6,
+              "inp": [
+                4,
+                5
+              ]
+            }
+          }
+        }
+      ],
+      "Output": [
+        {
+          "x": 640,
+          "y": 110,
+          "objectType": "Output",
+          "label": "A",
+          "direction": "LEFT",
+          "labelDirection": "RIGHT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "LEFT",
+              1,
+              {
+                "x": 100,
+                "y": 20,
+                "id": "78e1130557a7471f97c84c509330ddb2"
+              }
+            ],
+            "nodes": {
+              "inp1": 7
+            }
+          }
+        }
+      ]
+    },
+    {
+      "layout": {
+        "width": 100,
+        "height": 280,
+        "title_x": 50,
+        "title_y": 13,
+        "titleEnabled": true
+      },
+      "verilogMetadata": {
+        "isVerilogCircuit": false,
+        "isMainCircuit": false,
+        "code": "// Write Some Verilog Code Here!",
+        "subCircuitScopeIds": []
+      },
+      "restrictedCircuitElementsUsed": [],
+      "id": 3104103,
+      "name": "Ventilacao",
+      "allNodes": [
+        {
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            3
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            4
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            6
+          ]
+        },
+        {
+          "x": -10,
+          "y": -10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            0
+          ]
+        },
+        {
+          "x": -10,
+          "y": 10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            1
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            8
+          ]
+        },
+        {
+          "x": -10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            2
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            9
+          ]
+        },
+        {
+          "x": -10,
+          "y": -10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            5
+          ]
+        },
+        {
+          "x": -10,
+          "y": 10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            7
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            11
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            10
+          ]
+        }
+      ],
+      "nodes": [],
+      "Input": [
+        {
+          "x": 100,
+          "y": 100,
+          "objectType": "Input",
+          "label": "D",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1,
+              {
+                "x": 0,
+                "y": 20,
+                "id": "03f2b2a9c8a74f2fb1b7259f44c574fa"
+              }
+            ],
+            "nodes": {
+              "output1": 0
+            },
+            "values": {
+              "state": 0
+            }
+          }
+        },
+        {
+          "x": 100,
+          "y": 160,
+          "objectType": "Input",
+          "label": "G",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1,
+              {
+                "x": 0,
+                "y": 40,
+                "id": "13b5b9fbe63947dea8d873aaf68ae0ae"
+              }
+            ],
+            "nodes": {
+              "output1": 1
+            },
+            "values": {
+              "state": 0
+            }
+          }
+        },
+        {
+          "x": 100,
+          "y": 220,
+          "objectType": "Input",
+          "label": "F",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1,
+              {
+                "x": 0,
+                "y": 60,
+                "id": "0e9b82024dbd4458adb935e907cf1a07"
+              }
+            ],
+            "nodes": {
+              "output1": 2
+            },
+            "values": {
+              "state": 0
+            }
+          }
+        }
+      ],
+      "AndGate": [
+        {
+          "x": 250,
+          "y": 130,
+          "objectType": "AndGate",
+          "label": "DG",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              2,
+              1
+            ],
+            "nodes": {
+              "output1": 5,
+              "inp": [
+                3,
+                4
+              ]
+            }
+          }
+        },
+        {
+          "x": 450,
+          "y": 170,
+          "objectType": "AndGate",
+          "label": "V",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              2,
+              1
+            ],
+            "nodes": {
+              "output1": 10,
+              "inp": [
+                8,
+                9
+              ]
+            }
+          }
+        }
+      ],
+      "NotGate": [
+        {
+          "x": 250,
+          "y": 220,
+          "objectType": "NotGate",
+          "label": "NF",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1
+            ],
+            "nodes": {
+              "output1": 7,
+              "inp1": 6
+            }
+          }
+        }
+      ],
+      "Output": [
+        {
+          "x": 640,
+          "y": 110,
+          "objectType": "Output",
+          "label": "V",
+          "direction": "LEFT",
+          "labelDirection": "RIGHT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "LEFT",
+              1,
+              {
+                "x": 100,
+                "y": 20,
+                "id": "f3d6875682b4492d9e1a2c62be2dea25"
+              }
+            ],
+            "nodes": {
+              "inp1": 11
+            }
+          }
+        }
+      ]
+    },
+    {
+      "layout": {
+        "width": 100,
+        "height": 280,
+        "title_x": 50,
+        "title_y": 13,
+        "titleEnabled": true
+      },
+      "verilogMetadata": {
+        "isVerilogCircuit": false,
+        "isMainCircuit": false,
+        "code": "// Write Some Verilog Code Here!",
+        "subCircuitScopeIds": []
+      },
+      "restrictedCircuitElementsUsed": [],
+      "id": 3104104,
+      "name": "Arbitragem",
+      "allNodes": [
+        {
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            3,
+            9
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            5,
+            12
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            7,
+            23
+          ]
+        },
+        {
+          "x": -10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            0
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            13
+          ]
+        },
+        {
+          "x": -10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            1
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            10
+          ]
+        },
+        {
+          "x": -10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            2
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            16,
+            19
+          ]
+        },
+        {
+          "x": -10,
+          "y": -10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            0
+          ]
+        },
+        {
+          "x": -10,
+          "y": 10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            6
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            15
+          ]
+        },
+        {
+          "x": -10,
+          "y": -10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            1
+          ]
+        },
+        {
+          "x": -10,
+          "y": 10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            4
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            18
+          ]
+        },
+        {
+          "x": -10,
+          "y": -10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            11
+          ]
+        },
+        {
+          "x": -10,
+          "y": 10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            8
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            21
+          ]
+        },
+        {
+          "x": -10,
+          "y": -10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            14
+          ]
+        },
+        {
+          "x": -10,
+          "y": 10,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            8
+          ]
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "type": 1,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            22
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            17
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            20
+          ]
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "type": 0,
+          "bitWidth": 1,
+          "label": "",
+          "connections": [
+            2
+          ]
+        }
+      ],
+      "nodes": [],
+      "Input": [
+        {
+          "x": 100,
+          "y": 100,
+          "objectType": "Input",
+          "label": "CA",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1,
+              {
+                "x": 0,
+                "y": 20,
+                "id": "9cecd95025cc4f7a95fedd91f7e54375"
+              }
+            ],
+            "nodes": {
+              "output1": 0
+            },
+            "values": {
+              "state": 0
+            }
+          }
+        },
+        {
+          "x": 100,
+          "y": 160,
+          "objectType": "Input",
+          "label": "CB",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1,
+              {
+                "x": 0,
+                "y": 40,
+                "id": "c7cd9892f9d24f5b94562642b5b4c27f"
+              }
+            ],
+            "nodes": {
+              "output1": 1
+            },
+            "values": {
+              "state": 0
+            }
+          }
+        },
+        {
+          "x": 100,
+          "y": 220,
+          "objectType": "Input",
+          "label": "E",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1,
+              {
+                "x": 0,
+                "y": 60,
+                "id": "09981509b29b4da28a800215471673ee"
+              }
+            ],
+            "nodes": {
+              "output1": 2
+            },
+            "values": {
+              "state": 0
+            }
+          }
+        }
+      ],
+      "NotGate": [
+        {
+          "x": 210,
+          "y": 80,
+          "objectType": "NotGate",
+          "label": "NA",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1
+            ],
+            "nodes": {
+              "output1": 4,
+              "inp1": 3
+            }
+          }
+        },
+        {
+          "x": 210,
+          "y": 180,
+          "objectType": "NotGate",
+          "label": "NB",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1
+            ],
+            "nodes": {
+              "output1": 6,
+              "inp1": 5
+            }
+          }
+        },
+        {
+          "x": 210,
+          "y": 250,
+          "objectType": "NotGate",
+          "label": "NE",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              1
+            ],
+            "nodes": {
+              "output1": 8,
+              "inp1": 7
+            }
+          }
+        }
+      ],
+      "AndGate": [
+        {
+          "x": 340,
+          "y": 110,
+          "objectType": "AndGate",
+          "label": "A",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              2,
+              1
+            ],
+            "nodes": {
+              "output1": 11,
+              "inp": [
+                9,
+                10
+              ]
+            }
+          }
+        },
+        {
+          "x": 340,
+          "y": 200,
+          "objectType": "AndGate",
+          "label": "B",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              2,
+              1
+            ],
+            "nodes": {
+              "output1": 14,
+              "inp": [
+                12,
+                13
+              ]
+            }
+          }
+        },
+        {
+          "x": 500,
+          "y": 110,
+          "objectType": "AndGate",
+          "label": "MA",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              2,
+              1
+            ],
+            "nodes": {
+              "output1": 17,
+              "inp": [
+                15,
+                16
+              ]
+            }
+          }
+        },
+        {
+          "x": 500,
+          "y": 200,
+          "objectType": "AndGate",
+          "label": "MB",
+          "direction": "RIGHT",
+          "labelDirection": "LEFT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "RIGHT",
+              2,
+              1
+            ],
+            "nodes": {
+              "output1": 20,
+              "inp": [
+                18,
+                19
+              ]
+            }
+          }
+        }
+      ],
+      "Output": [
+        {
+          "x": 640,
+          "y": 110,
+          "objectType": "Output",
+          "label": "MA",
+          "direction": "LEFT",
+          "labelDirection": "RIGHT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "LEFT",
+              1,
+              {
+                "x": 100,
+                "y": 20,
+                "id": "0c37976517f840caa17e9091446801ee"
+              }
+            ],
+            "nodes": {
+              "inp1": 21
+            }
+          }
+        },
+        {
+          "x": 640,
+          "y": 190,
+          "objectType": "Output",
+          "label": "MB",
+          "direction": "LEFT",
+          "labelDirection": "RIGHT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "LEFT",
+              1,
+              {
+                "x": 100,
+                "y": 40,
+                "id": "2d8f26c456434307ae8819d7f6675c80"
+              }
+            ],
+            "nodes": {
+              "inp1": 22
+            }
+          }
+        },
+        {
+          "x": 640,
+          "y": 270,
+          "objectType": "Output",
+          "label": "AL_EMG",
+          "direction": "LEFT",
+          "labelDirection": "RIGHT",
+          "propagationDelay": 0,
+          "customData": {
+            "constructorParamaters": [
+              "LEFT",
+              1,
+              {
+                "x": 100,
+                "y": 60,
+                "id": "dcb4dec3888d40edb8c5fdfb4ab2a5c6"
+              }
+            ],
+            "nodes": {
+              "inp1": 23
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

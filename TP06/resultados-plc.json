@@ -1,0 +1,47 @@
+[
+  {
+    "id": "T01",
+    "expected": 1,
+    "actual": "True"
+  },
+  {
+    "id": "T02",
+    "expected": 1,
+    "actual": "True"
+  },
+  {
+    "id": "T03",
+    "expected": 0,
+    "actual": "False"
+  },
+  {
+    "id": "pre-T04",
+    "expected": 1,
+    "actual": "True"
+  },
+  {
+    "id": "T04",
+    "expected": 0,
+    "actual": "False"
+  },
+  {
+    "id": "T05",
+    "expected": 0,
+    "actual": "False"
+  },
+  {
+    "id": "pre-T06",
+    "expected": 1,
+    "actual": "True"
+  },
+  {
+    "id": "T06",
+    "expected": 0,
+    "actual": "False"
+  },
+  {
+    "id": "T07",
+    "expected": 0,
+    "actual": "False"
+  }
+]

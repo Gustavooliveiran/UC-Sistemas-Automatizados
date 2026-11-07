@@ -1,0 +1,15 @@
+{
+  "revOnly": {
+    "FWD": "False",
+    "REV": "True"
+  },
+  "fwdOnly": {
+    "FWD": "True",
+    "REV": "False"
+  },
+  "simultaneos": {
+    "id": "T08",
+    "FWD": "False",
+    "REV": "False"
+  }
+}

@@ -1,0 +1,1 @@
+Ações omitidas nas etapas valem zero. Temporizações são locais. Modelagem e percurso não validam sensores físicos. Porta requer mecanismo de liberação manual. Esteira assume cilindros monoestáveis com retorno ao retirar comando; o efeito real de desenergizar válvulas depende da montagem.

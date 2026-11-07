@@ -1,0 +1,11 @@
+TP04 - especificação Ladder (notação textual, não formato de importação)
+R01: --[ S ]--[ G ]--[/ E ]----------------( M )
+R02: --[ E ]--+---------------------------( ALARME )
+     --[/G ]--+
+R03: --[ A ]--[/ B ]--+--------------------( AL_DIV )
+     --[/A ]--[ B  ]--+
+R04: --[ D ]--[ G ]--[/ F ]----------------( V )
+R05: --[ CA ]--[/CB ]--[/E ]---------------( MA )
+R06: --[ CB ]--[/CA ]--[/E ]---------------( MB )
+R07: --[ E ]-------------------------------( AL_EMG )
+Contatos em ramos iniciam no mesmo trilho. Todas as bobinas são comuns, sem latch.
