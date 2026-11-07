@@ -1,4 +1,6 @@
 # Sistemas Automatizados - atividades individuais
+**Aluno:** Gustavo de Oliveira Nascimento
+**RA:** 824130662
 
 USJT · Engenharia de Software · 2026/2 · Prof. Robson Calvetti.
 
