@@ -1,0 +1,5 @@
+Topico,Direcao,Payload_Exemplo,QoS,Retained,Justificativa_e_Autoridade
+fabrica/celula11/estado,CLP/Gateway -> Broker/HMI,"{""mode"":""AUTO"",""step"":""STEP_T"",""safe"":true,""run"":true,""ts"":""2026-11-26T22:00:00Z""}",1,true,Assinantes novos recebem o ultimo estado operacional; apenas observacao/telemetria
+fabrica/celula11/producao,CLP/Gateway -> Broker/MES,"{""count"":12,""ts"":""2026-11-26T22:00:00Z""}",1,false,Contagem incremental de pecas separadas; duplicacao indevida evitada por evento
+fabrica/celula11/alarme,CLP/Gateway -> Broker/HMI,"{""code"":""ALM_TIMEOUT_A1"",""active"":true,""severity"":""HIGH"",""ts"":""2026-11-26T22:00:00Z""}",1,true,Mantem visivel o estado de falha ativa e o timestamp do evento
+fabrica/celula11/manutencao,CLP/Gateway -> Broker/CMMS,"{""cycleTime_s"":4.2,""timeoutCount"":1,""ts"":""2026-11-26T22:00:00Z""}",0,false,Dados de diagnostico e tendencia; nao governam seguranca nem comandos diretos

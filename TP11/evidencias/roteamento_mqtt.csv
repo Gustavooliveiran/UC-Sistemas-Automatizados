@@ -1,0 +1,5 @@
+Evento_Celula,Origem,Topico_MQTT,Consumidor,Acao_Esperada
+Mudanca de modo/etapa/SAFE,CLP -> Gateway,fabrica/celula11/estado,HMI / Supervisao,Atualiza tela e estado retido
+Conclusao de ciclo em B2,CLP -> Gateway,fabrica/celula11/producao,MES / Contador,Incrementa contagem de pecas
+Timeout ou perda de seguranca,CLP -> Gateway,fabrica/celula11/alarme,HMI / Historico,Registra alarme ativo e timestamp
+Tempo de ciclo e contadores,CLP -> Gateway,fabrica/celula11/manutencao,CMMS / Diagnostico,Monitora tendencia e timeouts
