@@ -1,7 +1,0 @@
-ID,Cenario,Resultado_esperado,Obtido_documental,Conclusao
-T01,Ler 40001 com FC03,SP_NIVEL interpretado com escala 0.1%,Offset e escala registrados,Aprovado documentalmente
-T02,Ler offset inexistente,Excecao de endereco,Excecao prevista,Aprovado documentalmente
-T03,Qualidade OPC UA Bad,Consumidor rejeita o valor,Regra documentada,Aprovado documentalmente
-T04,Filtro fabrica/linha1/+/temperatura,Só temperaturas da linha 1,Casos verificados,Aprovado documentalmente
-T05,Novo assinante com RETAIN,Recebe último estado retido quando aplicável,Estado e timestamp documentados,Aprovado documentalmente
-T06,Cliente sem permissão,Operação recusada,ACL documentada,Aprovado documentalmente

@@ -1,5 +1,0 @@
-Publicacao,Filtro,Esperado,Motivo
-fabrica/linha1/tanque101/temperatura,fabrica/linha1/+/temperatura,SIM,+ ocupa tanque101
-fabrica/linha2/tanque101/temperatura,fabrica/linha1/+/temperatura,NAO,linha diferente
-fabrica/linha1/motor03/estado,fabrica/linha1/#,SIM,# aceita descendentes
-fabrica/linha1,fabrica/linha1/+,NAO,falta um nivel
