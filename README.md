@@ -1,43 +1,29 @@
-# TP11 / P11 — Integração, Startup e Manutenção
+# Sistemas Automatizados - atividades individuais
+**Aluno:** Gustavo de Oliveira Nascimento
+**RA:** 824130662
 
-**Projeto:** célula didática de separação e transferência — Semana 11  
-**Versão do pacote:** v1.0.1
+USJT · Engenharia de Software · 2026/2 · Prof. Robson Calvetti.
 
-## Conteúdo
-- `tabela_io.csv` — endereçamento de entradas, saídas e memórias.
-- `casos_teste.csv` — matriz dos testes T01 a T06.
-- `celula11_tp11.xlsx` — planilha consolidada (Requisitos, IO, Estados, Testes e MQTT).
-- `grafcet_hmi_rede.drawio` — diagrama editável no diagrams.net.
-- `ladder_logica.md` — redes Ladder especificadas para transcrição no simulador de CLP.
-- `simulador_celula11.py` — simulador executável da sequência, permissivos, falhas e testes.
-- `topicos_mqtt.csv` e `evidencias/roteamento_mqtt.csv` — proposta de telemetria MQTT.
-- `manutencao_e_backup.md` — diagnóstico, manutenção e recuperação.
-- `evidencias/resultados_testes.json` — resultado reproduzível da suíte do simulador.
+Este pacote reúne as atividades TP00 a TP09 solicitadas para o GitHub. A3 e simulado de prova ficam fora do escopo. Os PDFs do professor não são redistribuídos.
 
-## Sequência funcional
-1. Com E0_OK e G1_OK ativos, um comando START habilita RUN e inicia STEP_T.
-2. STEP_T aciona M1 até B1 detectar a peça.
-3. B1 encerra STEP_T e inicia STEP_A/Y1.
-4. B3 confirma o avanço e inicia STEP_R/Y2.
-5. B2 confirma o retorno, incrementa a contagem e reinicia STEP_T.
+| Pasta | Conteúdo |
+|---|---|
+| TP00 | Resumo acadêmico em PDF e fonte Markdown |
+| TP01 | Porta automática, modelo funcional e cenários |
+| TP02 | Estação Wokwi, código, circuito e testes |
+| TP03 | Aquisição, filtragem e planilha de escalonamento |
+| TP04 | Lógica combinacional e especificação Ladder |
+| TP05 | GRAFCET, diagramas e percursos |
+| TP06 | Partida com selo, permissivos e reversão |
+| TP07 | TON, contagem e sequência |
+| TP08 | Supervisório de reservatório e tags |
+| TP09 | Rede industrial, endereçamento e riscos |
 
-## Permissivos e intertravamentos
-- `SAFE = E0_OK AND G1_OK`: representa somente os permissivos físicos de emergência e proteção.
-- `FAULT` é uma condição separada. RUN e todas as saídas exigem `SAFE=1` e `FAULT=0`.
-- Y1 e Y2 possuem intertravamento cruzado e não podem ser acionadas simultaneamente.
-- RESET limpa a falha, mas não inicia o ciclo. É necessário um novo START deliberado.
-- Perda de comunicação não deve comandar atuadores nem substituir a lógica local.
+## Situação da entrega
+Consultar STATUS.md antes da publicação. Resultados documentais e de modelos locais estão identificados como tal. Nenhum campo de simulação é aprovado sem observação. Links de projetos e capturas precisam corresponder à execução nos ambientes indicados.
 
-## Como conferir
-Com Python 3 instalado, executar dentro desta pasta:
+## Publicação
+Criar ou usar repositório pessoal público no GitHub, enviar as pastas preservando a estrutura e conferir os links relativos. Adicionar nome e RA apenas nos campos de identificação solicitados pelo professor. Não foram inventados nome, RA, integrantes ou repositório. Datas antigas das aulas não foram reinterpretadas como novos prazos.
 
-```bash
-python simulador_celula11.py
-```
-
-O programa imprime os resultados T01–T06 em JSON. A evidência salva em `evidencias/resultados_testes.json` foi gerada por essa execução; nesta versão, os seis casos da simulação lógica passaram.
-
-## Limites do pacote
-O simulador Python valida o comportamento lógico modelado. `ladder_logica.md` é a especificação das redes para implementação; não é um projeto nativo compilado de um fabricante específico. O diagrama HMI/rede e os tópicos MQTT são documentação de integração, não uma tela HMI executável nem uma conexão com broker real. Portanto, não se afirma que houve teste em CLP físico, HMI real ou broker MQTT.
-
-Este material é acadêmico e não substitui projeto, validação de segurança ou comissionamento de máquina real (NR-12 e normas aplicáveis).
+## Fonte principal
+[Pasta da disciplina](https://drive.google.com/drive/folders/1Y5BiTH1I47L28xdBArPPRYPFSyjU4qEL). Os enunciados de cada TP orientam os arquivos. Gabaritos usados para conferência, não como evidência de execução própria.
