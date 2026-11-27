@@ -1,0 +1,7 @@
+ID,Requisito,Versao,Pre_Condicao,Estimulo,Resultado_Esperado,Resultado_Obtido,Evidencia,Conclusao
+T01,R01/R02,v1.0.0,"SAFE=1, AUTO=1, B2=1, sem peca em B1",Acionar START,"STEP_T=1, M1=1, HMI indica Transporte","STEP_T=1, M1=1, Y1=0, Y2=0",evidencias/resultados_testes.json#T01,APROVADO
+T02,R02,v1.0.0,"Ciclo em STEP_T=1, M1=1",Ativar sensor B1 (peca detectada),"M1=0, STEP_T=0, STEP_A=1, Y1=1","M1=0, STEP_T=0, STEP_A=1, Y1=1",evidencias/resultados_testes.json#T02,APROVADO
+T03,R01/R04,v1.0.0,"Ciclo em STEP_A=1, Y1=1",Abrir protecao G1 (G1_OK=0),"SAFE=0, RUN=0, Y1=0, M1=0, etapas zeradas","SAFE=0, RUN=0, Y1=0, M1=0, etapas zeradas",evidencias/resultados_testes.json#T03,APROVADO
+T04,R05,v1.0.0,"Ciclo em STEP_A=1, Y1=1, B3 permanece 0",Aguardar tempo de timeout (3.0 s),"TON_A estoura, FAULT=1, Y1=0, alarme timeout ativo","FAULT=1, Y1=0, STEP_A=0, alarme ativo",evidencias/resultados_testes.json#T04,APROVADO
+T05,R06,v1.0.0,"Sistema em FAULT=1 apos falha, SAFE restaurado",Aplicar RESET sem START e depois aplicar START,RESET limpa FAULT sem mover; START retoma ciclo seguro,Sem movimento no RESET; ciclo retomado no START,evidencias/resultados_testes.json#T05,APROVADO
+T06,R01/R05,v1.0.0,Operacao ativa em modo automatico,Simular perda de comunicacao HMI/broker MQTT,Controle local continua seguro; qualidade ruim/alarme na rede,Controle local intacto; evento de falha de rede registrado,evidencias/resultados_testes.json#T06,APROVADO
