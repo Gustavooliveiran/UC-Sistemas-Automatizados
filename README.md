@@ -1,5 +1,5 @@
 Aluno: Gustavo de Oliveira Nascimento
-RA:: 824130662
+RA: 824130662
 # Sistemas Automatizados - atividades individuais
 **Aluno:** Gustavo de Oliveira Nascimento
 **RA:** 824130662
