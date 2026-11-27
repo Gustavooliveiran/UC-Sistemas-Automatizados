@@ -1,6 +1,0 @@
-NodeId,BrowseName,DataType,Unidade,AccessLevel,Origem
-ns=2;s=P101.Cmd,StartCommand,Boolean,-,Write,00001/FC05
-ns=2;s=P101.Run,Running,Boolean,-,Read,10001/FC02
-ns=2;s=T101.LevelRaw,LevelRaw,UInt16,count,Read,30001/FC04
-ns=2;s=T101.LevelSP,LevelSetpoint,Double,%,ReadWrite,40001/FC03/06
-ns=2;s=T101.Temp,Temperature,Double,°C,Read,40002-03/FC03

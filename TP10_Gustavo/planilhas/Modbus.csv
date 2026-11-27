@@ -1,6 +1,0 @@
-Referencia,Offset,Area,Funcao_leitura,Funcao_escrita,Tipo,Comprimento,Variavel,Unidade,Acesso
-00001,0,Coil,01,05,BOOL,1 bit,P101_CMD,-,RW autorizado
-10001,0,Discrete Input,02,,BOOL,1 bit,P101_RUN,-,R
-30001,0,Input Register,04,,UINT16,1,LT101_RAW,count,R
-40001,0,Holding Register,03,06,UINT16,1,SP_NIVEL,0.1%,RW
-40002-40003,1-2,Holding Register,03,,FLOAT32,2,TEMP_REAL,°C,R
